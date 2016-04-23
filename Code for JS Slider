@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+	<title>HTML and JS code for JS slider</title>
+
+	<script type="text/javascript">
+
+			var imagecount = 1;
+	        var total = 3;
+
+	function slide(x) {
+		var Image = document.getElementById('omg');
+		imagecount = imagecount + x;
+		if (imagecount > total) { imagecount= 1;};
+		if (imagecount < 1) { imagecount= total;};
+		Image.src = "images/pic" + imagecount + ".jpg";
+	}
+window.setInterval (function slideA() {
+		var Image = document.getElementById('omg');
+		imagecount = imagecount + 1;
+		if (imagecount > total) { imagecount= 1;};
+		if (imagecount < 1) { imagecount= total;};
+		Image.src = "images/pic" + imagecount + ".jpg";
+},5000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+ <div class="slider">
+	
+
+<div class="slidecontainer">
+<img src="images/pic1.jpg" class="fuck" id="omg" height="450" width="450">
+<div class="leftholder"><img id="omg" onclick="slide(-1)"  src="images/lefty.png" height="100" width="100"></div>
+<div class="rightholder"><img id="omg" onclick="slide(1)" src="images/righty.png" height="100" width="100"></div>
+</div>
+
+</div>
+
+</html>
