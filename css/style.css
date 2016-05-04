@@ -159,7 +159,7 @@ i.arrow{
 	margin: 2em 0;
 	position:absolute;
 	left: 37%;
-	margin-bottom: 60px;
+	
 }
 .logo h3 a{
 	font-family: 'Raleway', sans-serif;
@@ -167,6 +167,7 @@ i.arrow{
 	font-weight:700;
 	color:#fff;
 	text-decoration:none;
+	margin-top: -60px;
 	
 }
 .caption{
